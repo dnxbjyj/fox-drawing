@@ -8,6 +8,8 @@ def init():  # 初始化
     mode('logo')  # 设置mode为logo
     shape('turtle')  # 设置画笔形状
     pensize(5)  # 设置画笔粗细
+    speed(0)
+    skip_to_home()
 
 def ang2rad(angle):
     '''
@@ -283,10 +285,12 @@ def eyes():
     skip_to(70, 90)
     left(30)
     draw_arc(40, -90)
+    
+    skip_to_home()
 
 def main():
     init()
-    time.sleep(3)
+    # time.sleep(3)
     head_top()
     ears()
     pinnas()
